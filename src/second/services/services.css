@@ -1,0 +1,73 @@
+
+.filler{
+    background: #9AE298;
+    height: 25px;
+    border-radius: inherit;
+    margin:5px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5px;
+    
+}
+
+.servis-counter{    
+    position: relative;
+    float: right;
+    bottom: 10px;
+    right: 10px;
+    height: 100px;
+    width: 10px;
+    padding: -10px;
+    display: block;
+    margin: -10px;
+}
+.progres-bar{
+}
+
+
+.title{
+    position: relative;
+    float: left;
+    text-align: left;
+    width: 100px;
+    right: 40px;
+
+   
+}
+
+.Total-write{
+    font-size: 20px;
+    text-align: left;
+}
+.Total-score{
+    font-size: 20px;
+    text-align: right;
+    }
+
+.Total{
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+}
+.progres-servive-title{
+    min-inline-size: max-content;
+}
+.services{
+  
+}
+.servis{
+    display: flex;
+    justify-content: flex-end;
+    padding: 8px
+}
+.progress{
+    border-top-style: groove;
+    border-bottom: groove;
+}
+.services-div{
+
+}
+.progres-table{
+    max-width: 200px;
+}

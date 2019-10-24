@@ -1,0 +1,35 @@
+.person-info{   
+    text-align: left;
+    margin-bottom: 10px;
+}
+.persone-statusDay-text{
+    font-size: 13px;
+    font-weight:bold;
+}
+.persone-position{
+    font-size: 11px;
+    opacity: 0.5;
+}
+
+.persone-statusDay{
+    border: 1px grey solid;
+    background-color: #FFFBC7;
+    max-height: 50px;
+    width: 350px;
+    padding: 2px;
+    margin: auto;
+    border-radius: 5px;
+    margin-left: -20px;
+    padding: 10px 0 10px 15px;
+}
+
+.persone-container{
+    display: flex;
+    align-items: flex-start;
+    padding: 20px;
+    padding-bottom: 0;
+}
+ 
+.persone-info-container{
+    z-index: -1;
+}

@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .App-logo {
@@ -19,4 +21,9 @@
 
 .App-link {
   color: #09d3ac;
+}
+
+p, h1, h2, h3 , h4 {
+  padding: 0;
+  margin: 0;
 }
