@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
 import './services.css';
 
-
-
-
 class Services extends Component {
     state = {
         array: [
