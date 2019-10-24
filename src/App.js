@@ -13,11 +13,6 @@ function App(props) {
           <Route path="/" exact component={Top}></Route>
           <Route path="/other" exact component={Other} />
         </Switch>
-
-
-
-
-
       </div>
 
     </BrowserRouter>

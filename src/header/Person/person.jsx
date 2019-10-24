@@ -3,8 +3,6 @@ import './person.css';
 import img from '../fotoUser/img.png'
 import Services from '../../second/services/services';
 
-
-
 const Person = (props) => {
 
   return (
