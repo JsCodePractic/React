@@ -51,9 +51,7 @@ class Services extends Component {
                         )}
 
                     </div>
-                    {/* <span className="services">{this.state.array.map(service => 
-                            <p>{service.services}</p>
-                            )} </span> */}
+                    
                 </div>
                 <section>
                     <div className="Total">

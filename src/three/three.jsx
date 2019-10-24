@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './three.css';
 import like from './image-dialog/like.png';
 import dialog from './image-dialog/dialogs.png';
-import {NavLink} from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
 
 
@@ -12,13 +12,13 @@ import {NavLink} from 'react-router-dom'
 class review extends Component {
     constructor(props) {
         super(props)
-        const today = new Date(),              
-            date = + today.getDate()  + ' ' + (today.getMonth() + 1) + ' ' + today.getFullYear();
+        const today = new Date(),
+            date = + today.getDate() + ' ' + (today.getMonth() + 1) + ' ' + today.getFullYear();
         this.state = {
             like: 192,
             activ: true,
             input: '',
-            date:date,
+            date: date,
             dialogs: [
                 {
                     name: "Самуил",
@@ -55,30 +55,30 @@ class review extends Component {
         }
     }
     addNew = (e) => {
-        if ( e.ctrlKey && e.which === 13) {
+        if (e.ctrlKey && e.which === 13) {
             this.setState({
                 dialogs: [{
-                    name:'Гость',
+                    name: 'Гость',
                     data: this.state.date,
-                    review:this.state.input
-                },...this.state.dialogs],
-                input:""
+                    review: this.state.input
+                }, ...this.state.dialogs],
+                input: ""
             })
-            
+
         }
 
     }
-    addNewButtom = () => {        
-            this.setState({
-                dialogs: [{
-                    name:'Гость',
-                    data: this.state.date,
-                    review:this.state.input
-                },...this.state.dialogs],
-                input:""
-            })
-            
-        
+    addNewButtom = () => {
+        this.setState({
+            dialogs: [{
+                name: 'Гость',
+                data: this.state.date,
+                review: this.state.input
+            }, ...this.state.dialogs],
+            input: ""
+        })
+
+
 
     }
 
@@ -95,13 +95,13 @@ class review extends Component {
 
 
     }
-  
+
     render() {
 
         return (
-            
-            <div className="review"> 
-                        
+
+            <div className="review">
+
                 <section className="review-section">
                     <h3 className="last-review">Последние отзывы </h3><NavLink to="/other" className="other-road">Все отзывы</NavLink>
                     <section className="like-and-repost">
@@ -124,9 +124,11 @@ class review extends Component {
                         <input
                             onKeyPress={this.addNew}
                             value={this.state.input}
-                            onChange={(e)=>{this.setState({
-                                input:e.target.value
-                            })}}
+                            onChange={(e) => {
+                                this.setState({
+                                    input: e.target.value
+                                })
+                            }}
                             className="text-area" name="text" id="" cols="30" rows="10" ></input>
                     </div>
                     <div className="Push-button">
@@ -140,12 +142,4 @@ class review extends Component {
     }
 
 }
-
-
-
-
-
-
-
-
 export default review;

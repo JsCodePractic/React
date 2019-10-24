@@ -1,11 +1,11 @@
 import React from 'react';
-import Persone from '../header/Person/person';
+import Person from '../header/Person/person';
 import Review from '../three/three'
 
 const Top = () => {
     return (
         <div>          
-            <Persone></Persone>
+            <Person></Person>
             <Review></Review>
         </div>
     )

@@ -5,7 +5,7 @@ import Services from '../../second/services/services';
 
 
 
-const Persone = (props) => {
+const Person = (props) => {
 
   return (
     <div className="persone-container">
@@ -38,6 +38,6 @@ const info = {
 
 
 
-export default Persone;
+export default Person;
 
 
