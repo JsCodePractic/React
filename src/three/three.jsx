@@ -4,11 +4,6 @@ import like from './image-dialog/like.png';
 import dialog from './image-dialog/dialogs.png';
 import { NavLink } from 'react-router-dom'
 
-
-
-
-
-
 class review extends Component {
     constructor(props) {
         super(props)
