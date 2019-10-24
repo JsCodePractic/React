@@ -28,7 +28,7 @@ class review extends Component {
                 {
                     name: "Андрей",
                     data: '11.08.2011',
-                    review: 'Хочу заказать отел! '
+                    review: 'Хочу заказать отель! '
                 },
                 {
                     name: "Елена",
@@ -66,6 +66,19 @@ class review extends Component {
             })
             
         }
+
+    }
+    addNewButtom = () => {        
+            this.setState({
+                dialogs: [{
+                    name:'Гость',
+                    data: this.state.date,
+                    review:this.state.input
+                },...this.state.dialogs],
+                input:""
+            })
+            
+        
 
     }
 
@@ -117,7 +130,7 @@ class review extends Component {
                             className="text-area" name="text" id="" cols="30" rows="10" ></input>
                     </div>
                     <div className="Push-button">
-                        <button className="yelow-buttom" >
+                        <button onClick={this.addNewButtom} className="yelow-buttom" >
                             <span className="span-text-buttom">Написать консультанту </span>
                         </button>
                     </div>

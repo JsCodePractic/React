@@ -16,7 +16,7 @@ class Reviewsec extends Component {
                 {
                     name: "Андрей",
                     data: '11.08.2011',
-                    review: 'Хочу заказать отел! '
+                    review: 'Хочу заказать отель! '
                 },
                 {
                     name: "Елена",
