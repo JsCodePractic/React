@@ -4,9 +4,9 @@ import './reviewSec.css';
 
 class Reviewsec extends Component {
     constructor(props) {
-        super(props)             
-           
-        this.state = {          
+        super(props)
+
+        this.state = {
             dialogs: [
                 {
                     name: "Самуил",
