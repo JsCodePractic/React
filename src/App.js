@@ -1,23 +1,34 @@
-import React from 'react';
-import './App.css';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import Other from './other/other';
-import Top from './TopComponent/Top';
+import React, { createContext, useState } from 'react';
+import ListCharacted from "./components/RickAndMorty/ListCharacted/ListCharacted";
+import { Route, Switch } from 'react-router-dom';
+import Details from './components/RickAndMorty/Details/Details';
+import ProgresBar from './components/ProgresBar/ProgresBar'
 
-function App(props) {
+import './App.css';
+
+export const DataContext = createContext({
+  list: [],
+  setList: () => { }
+})
+
+const App = () => {
+  const [list, setList] = useState([])
 
   return (
-    <BrowserRouter>
-      <div className="App">
+    <div className="App">
+      <DataContext.Provider value={{
+        list,
+        setList,
+      }}>
         <Switch>
-          <Route path="/" exact component={Top}></Route>
-          <Route path="/other" exact component={Other} />
+          <Route path="/details/:id" exact component={Details}></Route>
+          <Route path="/" exact component={ListCharacted}></Route>
+          <Route path="/progresBar" exact component={ProgresBar}></Route>
         </Switch>
-      </div>
-
-    </BrowserRouter>
-
-  );
+      </DataContext.Provider>
+    </div>
+  )
 }
 
 export default App;
+
